@@ -81,7 +81,7 @@ module Samplserv
     end    
 
     post "/never" do
-      version = params["v"] ? params["v"].to_i : 1
+      version = params["v"].to_i ? params["v"].to_i : 1
       # binding.pry
       spawn("afplay \"samples/Never#{version}.mp3\"")
       "never"
@@ -128,10 +128,6 @@ module Samplserv
       spawn("afplay \"samples/Beat.mp3\"")
       "Time your samples to make the song!"
     end    
-
-
-
-
 
     get "/stop" do
       spawn("killall afplay")

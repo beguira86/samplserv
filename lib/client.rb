@@ -3,7 +3,7 @@ require "pry"
 
 class SamplParty
   include HTTParty
-  base_uri "http://10.0.0.124:4567"
+  base_uri "http://localhost:4567"
 
   def after(options={})
     SamplParty.post("/after", :body => options)
@@ -78,4 +78,63 @@ class SamplParty
   end
 end
 
+
+
+beat = SamplParty.new
 binding.pry
+beat.beat
+sleep(46.47)
+beat.workit
+sleep(0.95)
+beat.makeit
+sleep(0.95)
+beat.doit
+sleep(0.95)
+beat.makesus
+sleep(5.35)
+beat.harder
+sleep(0.95)
+beat.better
+sleep(0.95)
+beat.faster
+sleep(0.95)
+beat.stronger
+sleep(4.40)
+beat.morethan
+sleep(0.95)
+beat.our[3]
+sleep(0.95)
+beat.our
+sleep(0.95)
+beat.never
+sleep(5.40)
+beat.ever
+sleep(0.95)
+beat.after
+sleep(0.95)
+beat.workis 
+sleep(0.95)
+beat.over
+sleep(4.40)
+beat.workit
+sleep(0.95)
+beat.makeit
+sleep(0.95)
+beat.doit
+sleep(0.95)
+beat.makesus
+sleep(5.35)
+beat.harder
+sleep(0.95)
+beat.better
+sleep(0.95)
+beat.faster
+sleep(0.95)
+beat.stronger
+sleep(5.40)
+#then the timing gets faster
+
+
+
+
+
